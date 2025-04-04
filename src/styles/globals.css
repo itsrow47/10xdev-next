@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
+:root {
+  --background: #0F0F0F;
+  --foreground: #D5D5D5;
+}
+
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-primary: var(--foreground);
+  --color-primary-foreground: var(--background);
+  --color-secondary: var(--background);
+  --color-secondary-foreground: var(--foreground);
+  --color-accent: #2A4A6D;
+  --color-accent-foreground: #46A4F5;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
