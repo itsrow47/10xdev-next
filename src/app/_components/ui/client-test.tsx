@@ -1,9 +1,10 @@
 'use client'
 import { api } from "@/trpc/react"
 import { useAppContext } from "../global/context"
-import { signIn , signOut} from "next-auth/react"
+import { signIn, signOut } from "next-auth/react"
 import { motion } from "motion/react"
 import { Button } from "./button"
+import { BoxIcon } from "lucide-react"
 
 export default function ClientTest() {
     const isAuthenticated = useAppContext().isAuthenticated
@@ -19,11 +20,10 @@ export default function ClientTest() {
             animate={{ opacity: 1, filter: "blur(0px)" }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="border border-white/20 h-full flex flex-col items-center justify-center rounded-lg bg-white/5 p-4">
+            className="border border-white/20 h-[90%] flex flex-col items-center justify-center rounded-lg bg-white/5 p-4">
             {!isAuthenticated ?
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className="text-3xl font-bold">Hello World!</h1>
-                    <p className="text-lg">Please sign in to see the latest post</p>
+                    <h1 className="text-2xl flex gap-x-3 items-center"><BoxIcon className="text-white" />Client Component and Lucid React Icon!</h1>
                     <Button
                         variant="primary"
                         size="md"

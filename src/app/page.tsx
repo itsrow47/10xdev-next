@@ -13,6 +13,8 @@ export default async function Home() {
   return (
     <HydrateClient>
       <main className="h-full">
+        <h1 className="text-sm font-bold">Server Component</h1>
+        <br />
         <ClientTest />
       </main>
     </HydrateClient>
