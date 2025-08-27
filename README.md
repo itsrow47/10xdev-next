@@ -12,7 +12,8 @@ This template is built on top of the popular `create-t3-app`. However, after ini
 
 - **Next.js**  
 - **tRPC**  
-- **Tailwind CSS**  
+- **Tailwind CSS**
+- **Next.js**  
 - **Lucid Icons**  
 - **Framer Motion**  
 - **Prisma**  
