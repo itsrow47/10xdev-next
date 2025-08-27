@@ -1,11 +1,10 @@
 import "@/styles/globals.css";
-
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 
 import { TRPCReactProvider } from "@/trpc/react";
-import SessionProviderClientComponent from "./_components/auth/session-client-provider";
-import AppContextProvider from "./_components/global/context";
+import SessionProviderClientComponent from "@/components/auth/session-client-provider";
+import AppContextProvider from "@/lib/context";
 
 export const metadata: Metadata = {
   title: "47Labs - Dev Setup",
